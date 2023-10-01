@@ -1,0 +1,47 @@
+/* Importing Bootstrap SCSS file. */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --link-color: #929292;
+  --placeholder-color: #494949;
+  --main-text-color: #252525;
+  --description-color: #c0c0c0;
+  --product-bg: #121212;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    flex: 40%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product {
+    flex: 40%;
+
+    .product__image {
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    flex: 100%;
+  }
+}
