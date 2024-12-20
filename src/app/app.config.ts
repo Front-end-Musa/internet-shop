@@ -9,7 +9,7 @@ import { provideStoreDevtools } from '@ngrx/store-devtools';
 import { provideRouterStore } from '@ngrx/router-store';
 import { EffectsModule } from '@ngrx/effects';
 // import { ProductsEffects } from './features/product/state/';
-import { productsReducer } from './features/product/state';
+import { productsReducer } from './features/products/state';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(), importProvidersFrom(), 
