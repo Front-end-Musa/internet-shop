@@ -8,8 +8,8 @@ import { provideEffects } from '@ngrx/effects';
 import { provideStoreDevtools } from '@ngrx/store-devtools';
 import { provideRouterStore } from '@ngrx/router-store';
 import { EffectsModule } from '@ngrx/effects';
-// import { ProductsEffects } from './features/product/state/';
-import { productsReducer } from './features/products/state';
+// import { ProductsEffects } from './features/products-list/state/';
+import { productsReducer } from './features/products-list/state';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(), importProvidersFrom(), 
