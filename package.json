@@ -65,5 +65,14 @@
   },
   "nx": {
     "includedScripts": []
+  },
+  "targets": {
+  "serve": {
+      "executor": "@nx/web:dev-server",
+      "options": {
+        "buildTarget": "shop-project:build"
+      }
+    }
   }
+
 }
